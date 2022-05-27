@@ -1,0 +1,113 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1{
+  font-family: 'Pacifico', cursive;
+  width: 100%;
+  text-align: center;
+}
+
+h2{
+  margin-top: 1rem;
+}
+
+h2, h3, p, button{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+}
+
+div{
+  justify-content: center;
+}
+
+.buttonContainer{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#drawCard{
+  background-color: lightgrey;
+  border: 2px solid lightgrey;
+  border-radius: .2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#drawCard:hover{
+  cursor: pointer;
+  background: white;
+}
+
+.cardContainer{
+  text-align: center;
+}
+
+.blurb{
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  margin: 1rem 30%;
+  text-align: justify;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+footer span{
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-decoration: lightslategray;
+  margin: 0 1rem;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 600px){
+
+  h1{
+    font-size: 28px;
+  }
+
+  p{
+    margin: 0 2rem;
+    font-size: 14px;
+  }
+
+}
